@@ -1,0 +1,185 @@
+/* =========================
+RESET INTELIGENTE
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    background:#f5f7fb;
+    color:#222;
+    overflow-x:hidden;
+}
+
+/* =========================
+CONTENEDOR GLOBAL
+========================= */
+
+.container{
+    width:100%;
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 8%;
+}
+
+/* =========================
+IMÁGENES RESPONSIVE
+========================= */
+
+img{
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+
+/* =========================
+TEXTOS FLUIDOS (CLAVE MÓVIL)
+========================= */
+
+h1{
+    font-size:clamp(28px,5vw,60px);
+    line-height:1.1;
+}
+
+h2{
+    font-size:clamp(22px,4vw,40px);
+}
+
+p{
+    font-size:clamp(14px,2.2vw,18px);
+    line-height:1.6;
+}
+
+/* =========================
+LAYOUT FLEX BASE
+========================= */
+
+.flex{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-between;
+}
+
+/* =========================
+GRID BASE
+========================= */
+
+.grid{
+    display:grid;
+    gap:20px;
+}
+
+/* auto responsive mágico */
+.grid.auto{
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+}
+
+/* =========================
+BOTONES UNIVERSALES
+========================= */
+
+.btn{
+    display:inline-block;
+    padding:14px 25px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.btn-primary{
+    background:#e30613;
+    color:white;
+}
+
+.btn-primary:hover{
+    background:#004aad;
+}
+
+.btn-secondary{
+    border:2px solid #004aad;
+    color:#004aad;
+}
+
+.btn-secondary:hover{
+    background:#004aad;
+    color:white;
+}
+
+/* =========================
+HEADER BASE
+========================= */
+
+header{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    background:#0d1117;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+}
+
+/* evita que el header tape contenido */
+body{
+    padding-top:80px;
+}
+
+/* =========================
+SECCIONES
+========================= */
+
+section{
+    width:100%;
+    padding:80px 0;
+}
+
+/* =========================
+FOOTER UNIVERSAL
+========================= */
+
+footer{
+    background:#0d1117;
+    color:white;
+    padding:40px 8%;
+    margin-top:auto;
+    text-align:center;
+}
+
+/* =========================
+RESPONSIVE GLOBAL
+========================= */
+
+@media(max-width:900px){
+
+.flex{
+    flex-direction:column;
+    text-align:center;
+}
+
+header{
+    flex-direction:column;
+    gap:10px;
+}
+
+.container{
+    padding:0 5%;
+}
+}
