@@ -1,0 +1,208 @@
+/* =========================
+   CATALOGO - MISMO ESTILO BASE
+========================= */
+
+/* RESET (igual al tuyo) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f7f7f7;
+    color: #222;
+}
+
+/* =========================
+   HEADER (IGUAL ESTILO BASE)
+========================= */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #111;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #00c853;
+}
+
+.btn-whatsapp {
+    background: #25D366;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* hamburguesa */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* =========================
+   HERO CATALOGO (MISMO FLOW HERO)
+========================= */
+.catalogo-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px;
+    background: linear-gradient(135deg, #111, #333);
+    color: white;
+}
+
+.catalogo-hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.catalogo-hero p {
+    max-width: 600px;
+    opacity: 0.85;
+}
+
+/* =========================
+   PRODUCTOS (ESTILO BENEFITS PERO MEJORADO)
+========================= */
+.catalogo-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 50px;
+}
+
+/* CARD */
+.product-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #222;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+/* IMAGEN */
+.product-img img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* INFO */
+.product-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-info h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.product-info p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* TAG */
+.tag-producto {
+    display: inline-block;
+    padding: 6px 12px;
+    background: #00c853;
+    color: white;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+/* =========================
+   FOOTER (IGUAL BASE)
+========================= */
+.footer {
+    background: #111;
+    color: white;
+    padding: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-social a {
+    margin-right: 10px;
+    color: white;
+}
+
+/* =========================
+   RESPONSIVE (MISMO SISTEMA)
+========================= */
+@media (max-width: 768px) {
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        background: #000;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 200px;
+        padding: 20px;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        color: white;
+    }
+
+    .catalogo-hero {
+        padding: 30px;
+    }
+
+    .catalogo-hero h1 {
+        font-size: 28px;
+    }
+
+    .catalogo-container {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+}

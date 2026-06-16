@@ -1,0 +1,85 @@
+.product-page {
+    padding: 60px 8%;
+    background: #f5f7fb;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.product-detail {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+}
+
+/* IMAGEN */
+.product-img img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+}
+
+/* INFO */
+.product-info h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    margin-bottom: 15px;
+    color: #444;
+}
+
+/* LISTA */
+.product-info ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.product-info ul li {
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* ETIQUETA */
+.tag-producto {
+    display: inline-block;
+    background: #004aad;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+/* BOTÓN */
+.btn-primary {
+    display: inline-block;
+    background: #e30613;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #004aad;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .product-detail {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .product-img img {
+        max-width: 300px;
+    }
+}
