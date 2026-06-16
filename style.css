@@ -2296,7 +2296,7 @@ CONTACTO PRO
     border-radius:18px;
     padding:25px;
 
-    /* efecto elegante */
+
     box-shadow:0 20px 60px rgba(0,0,0,.35);
 
     animation:pop .25s ease;
@@ -2314,7 +2314,7 @@ CONTACTO PRO
     }
 }
 
-/* inputs más finos */
+
 .modal-content input,
 .modal-content textarea{
     width:100%;
@@ -2324,7 +2324,6 @@ CONTACTO PRO
     border:1px solid #ddd;
 }
 
-/* botones */
 .modal-content button{
     width:100%;
     margin-top:10px;
@@ -2359,4 +2358,80 @@ CONTACTO PRO
     margin:6px 0;
     padding:8px;
     border-radius:8px;
+}
+
+@media(max-width:768px){
+
+    h1{
+        font-size:32px !important;
+    }
+
+    h2{
+        font-size:26px !important;
+    }
+
+    p{
+        font-size:15px !important;
+    }
+
+    .hero-text,
+    .about-text,
+    .product-info{
+        text-align:center;
+    }
+
+    .btn,
+    .btn-primary,
+    .btn-secondary{
+        width:100%;
+        display:block;
+        text-align:center;
+    }
+
+    .card,
+    .producto,
+    .service-card{
+        width:100%;
+    }
+}
+
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    color:white;
+    cursor:pointer;
+}
+
+@media(max-width:768px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .navbar{
+        position:fixed;
+        top:70px;
+        right:-100%;
+        width:70%;
+        height:100vh;
+        background:#0d1117;
+        flex-direction:column;
+        gap:25px;
+        padding-top:40px;
+        transition:.4s;
+    }
+
+    .navbar.active{
+        right:0;
+    }
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+}
+
+.navbar a:hover{
+    color:#00AEEF;
 }

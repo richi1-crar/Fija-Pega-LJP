@@ -1,0 +1,395 @@
+/* ==========================
+RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f7fb;
+    overflow-x:hidden;
+}
+
+/* ==========================
+HEADER
+========================== */
+
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:90px;
+    background:#111827;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 8%;
+    z-index:1000;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+.logo img{
+    width:220px;
+    height:auto;
+}
+
+.navbar{
+    display:flex;
+    gap:35px;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:white;
+    font-weight:600;
+    transition:.3s;
+}
+
+.navbar a:hover,
+.navbar .active{
+    color:#e30613;
+}
+
+.btn-contacto{
+    background:#e30613;
+    color:white;
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-contacto:hover{
+    background:#004aad;
+}
+
+/* ==========================
+HERO
+========================== */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:140px 8% 80px;
+    background:linear-gradient(
+        135deg,
+        #ffffff,
+        #dceeff
+    );
+}
+
+.hero-left{
+    width:50%;
+}
+
+.hero-left h1{
+    font-size:72px;
+    line-height:1;
+    font-weight:900;
+    color:#0f172a;
+    margin-bottom:25px;
+}
+
+.hero-left h1 span{
+    color:#e30613;
+    display:block;
+}
+
+.hero-left p{
+    font-size:20px;
+    color:#555;
+    margin-bottom:30px;
+    max-width:600px;
+}
+
+.hero-features{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-bottom:35px;
+}
+
+.feature{
+    background:white;
+    padding:15px 20px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    font-weight:600;
+}
+
+.btn-red{
+    display:inline-block;
+    background:#e30613;
+    color:white;
+    text-decoration:none;
+    padding:18px 35px;
+    border-radius:14px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.btn-red:hover{
+    transform:translateY(-4px);
+}
+
+.hero-right{
+    width:45%;
+    text-align:center;
+}
+
+.hero-right img{
+    width:100%;
+    max-width:650px;
+    filter:drop-shadow(0 20px 30px rgba(0,0,0,.20));
+}
+
+/* ==========================
+QUIENES SOMOS
+========================== */
+
+.about{
+    padding:100px 8%;
+    background:white;
+}
+
+.about h2{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:50px;
+    color:#111827;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.about-box{
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 5px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.about-box:hover{
+    transform:translateY(-8px);
+}
+
+.about-box h3{
+    margin-bottom:15px;
+    color:#e30613;
+}
+
+.about-box p{
+    color:#555;
+    line-height:1.7;
+}
+
+/* ==========================
+BENEFICIOS
+========================== */
+
+.beneficios{
+    background:#111827;
+    color:white;
+    padding:40px 8%;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    text-align:center;
+    font-weight:600;
+}
+
+/* ==========================
+FOOTER
+========================== */
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+footer img{
+    width:180px;
+    margin-bottom:15px;
+}
+
+footer p{
+    color:#cbd5e1;
+}
+
+/* ==========================
+PÁGINAS INTERNAS
+SERVICIOS
+CATÁLOGO
+TUTORIAL
+CONTACTO
+========================== */
+
+.page-header{
+    padding-top:140px;
+    padding-bottom:80px;
+    text-align:center;
+    background:linear-gradient(
+        135deg,
+        #004aad,
+        #00AEEF
+    );
+    color:white;
+}
+
+.page-header h1{
+    font-size:55px;
+}
+
+.page-content{
+    padding:80px 8%;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+}
+
+.card h3{
+    margin:15px 0;
+}
+
+.card p{
+    color:#555;
+}
+
+.btn-card{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 20px;
+    background:#e30613;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+}
+
+/* ==========================
+FORMULARIOS
+========================== */
+
+.formulario{
+    max-width:700px;
+    margin:auto;
+}
+
+.formulario input,
+.formulario textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+}
+
+.formulario button{
+    width:100%;
+    padding:15px;
+    background:#e30613;
+    border:none;
+    color:white;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+/* ==========================
+RESPONSIVE
+========================== */
+
+@media(max-width:991px){
+
+    .navbar{
+        display:none;
+    }
+
+    .btn-contacto{
+        display:none;
+    }
+
+    .logo img{
+        width:170px;
+    }
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        padding-top:140px;
+    }
+
+    .hero-left,
+    .hero-right{
+        width:100%;
+    }
+
+    .hero-left h1{
+        font-size:42px;
+    }
+
+    .hero-left p{
+        font-size:16px;
+    }
+
+    .hero-features{
+        justify-content:center;
+    }
+
+    .hero-right img{
+        max-width:320px;
+        margin-top:40px;
+    }
+
+    .about-grid{
+        grid-template-columns:1fr;
+    }
+
+    .beneficios{
+        grid-template-columns:1fr;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .page-header h1{
+        font-size:38px;
+    }
+}

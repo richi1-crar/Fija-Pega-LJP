@@ -1,0 +1,346 @@
+/* =========================
+CONTACTO PRO
+========================= */
+
+.contact-page{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:160px 8% 80px;
+    background:#f5f7fb;
+}
+
+/* TARJETA */
+.contact-card{
+    background:white;
+    padding:50px;
+    border-radius:20px;
+    text-align:center;
+    max-width:600px;
+    width:100%;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+/* TITULO */
+.contact-card h1{
+    font-size:42px;
+    margin-bottom:10px;
+    color:#004aad;
+}
+
+.sub{
+    color:#555;
+    margin-bottom:30px;
+}
+
+/* INFO */
+.contact-info{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    margin-bottom:30px;
+}
+
+.info-box{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    padding:12px;
+    background:#f2f5ff;
+    border-radius:12px;
+    font-size:16px;
+}
+
+/* BOTÓN WHATSAPP */
+.btn-whatsapp{
+    display:inline-block;
+    background:#25D366;
+    color:white;
+    padding:15px 30px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-whatsapp:hover{
+    transform:scale(1.05);
+}
+
+.footer-social a{
+    width:45px;
+    height:45px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    background:rgba(255,255,255,.1);
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+}
+
+.footer-social a:hover{
+    background:#e30613;
+    transform:translateY(-5px) scale(1.1);
+}
+.footer-social a{
+    width:45px;
+    height:45px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    background:rgba(255,255,255,.08);
+    transition:.3s;
+}
+
+.footer-social a svg{
+    width:20px;
+    height:20px;
+    fill:white;
+}
+
+.footer-social a:hover{
+    background:#e30613;
+    transform:translateY(-5px) scale(1.1);
+}
+.footer-social a{
+    width:45px;
+    height:45px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    background:#1c1c1c;
+    transition:.3s;
+}
+
+.footer-social a svg{
+    width:20px;
+    height:20px;
+    fill:white;
+}
+
+/* FACEBOOK */
+.footer-social a.facebook:hover{
+    background:#1877F2;
+}
+
+/* INSTAGRAM */
+.footer-social a.instagram:hover{
+    background:radial-gradient(circle at 30% 107%, 
+        #fdf497 0%, 
+        #fdf497 5%, 
+        #fd5949 45%, 
+        #d6249f 60%, 
+        #285AEB 90%);
+}
+
+/* LINKEDIN */
+.footer-social a.linkedin:hover{
+    background:#0A66C2;
+}
+
+/* WHATSAPP */
+.footer-social a.whatsapp:hover{
+    background:#25D366;
+}
+
+.footer-social a:hover{
+    transform:translateY(-5px) scale(1.1);
+}
+.footer-social a.whatsapp:hover{
+    background:#25D366;
+}
+
+.footer-social a svg{
+    width:20px;
+    height:20px;
+    fill:white;
+}
+.modal{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.6);
+    justify-content:center;
+    align-items:center;
+}
+
+.modal-content{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    width:300px;
+}
+
+.modal-content input,
+.modal-content textarea{
+    width:100%;
+    margin:8px 0;
+    padding:10px;
+}
+.modal{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.6);
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.modal-content{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    width:320px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+.modal-content input,
+.modal-content textarea{
+    width:100%;
+    margin:8px 0;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+.modal-content button{
+    margin-top:10px;
+    padding:10px;
+    width:100%;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.modal-content button:first-of-type{
+    background:#e30613;
+    color:white;
+}
+
+.modal-content button:last-of-type{
+    background:#555;
+    color:white;
+}
+.modal{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    background:rgba(0,0,0,.6);
+    z-index:999999;
+
+    /* 🔥 CLAVE DEL CENTRADO */
+    justify-content:center;
+    align-items:center;
+}
+
+.modal-content{
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    width:320px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+.modal{
+    display:none;
+    position:absolute; /* 👈 clave: ya no fija toda la pantalla */
+    inset:auto;
+
+    width:100%;
+    height:100%;
+
+    justify-content:center;
+    align-items:center;
+
+    background:rgba(0,0,0,.25); /* suave */
+}
+
+.modal-content{
+    width:100%;
+    max-width:380px;
+    background:white;
+    border-radius:18px;
+    padding:25px;
+
+    /* efecto elegante */
+    box-shadow:0 20px 60px rgba(0,0,0,.35);
+
+    animation:pop .25s ease;
+    text-align:center;
+}
+
+@keyframes pop{
+    from{
+        transform:scale(.85);
+        opacity:0;
+    }
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+
+/* inputs más finos */
+.modal-content input,
+.modal-content textarea{
+    width:100%;
+    margin:8px 0;
+    padding:12px;
+    border-radius:10px;
+    border:1px solid #ddd;
+}
+
+/* botones */
+.modal-content button{
+    width:100%;
+    margin-top:10px;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.modal-content button:first-of-type{
+    background:#e30613;
+    color:white;
+}
+
+.modal-content button:last-of-type{
+    background:#333;
+    color:white;
+}
+.modal-content{
+    background:white;
+    width:240px;
+    padding:15px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+.modal-content select,
+.modal-content input{
+    width:100%;
+    margin:6px 0;
+    padding:8px;
+    border-radius:8px;
+}
